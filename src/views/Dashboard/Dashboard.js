@@ -135,12 +135,12 @@ export default function Dashboard() {
               />
             </CardHeader>
             <CardBody>
-              <h4 className={classes.cardTitle}>Daily Sales</h4>
+              <h4 className={classes.cardTitle}>Non Symptomatic Graph</h4>
               <p className={classes.cardCategory}>
                 <span className={classes.successText}>
-                  <ArrowUpward className={classes.upArrowCardCategory} /> 55%
+                  <ArrowUpward className={classes.upArrowCardCategory} /> ?%
                 </span>{" "}
-                increase in today sales.
+                Increase in Health Index So far
               </p>
             </CardBody>
             <CardFooter chart>
@@ -163,12 +163,19 @@ export default function Dashboard() {
               />
             </CardHeader>
             <CardBody>
-              <h4 className={classes.cardTitle}>Email Subscriptions</h4>
-              <p className={classes.cardCategory}>Last Campaign Performance</p>
+              <h4 className={classes.cardTitle}>Corana Stats</h4>
+              <p className={classes.cardCategory}>
+                Stats regarding Corona Cases , Vaccination
+              </p>
             </CardBody>
             <CardFooter chart>
               <div className={classes.stats}>
-                <AccessTime /> Synced with latest Update from DB
+                <a
+                  href="https://corona-tracker-app-neo.netlify.app/"
+                  target="blank"
+                >
+                  See Full Stats
+                </a>
               </div>
             </CardFooter>
           </Card>
@@ -185,8 +192,10 @@ export default function Dashboard() {
               />
             </CardHeader>
             <CardBody>
-              <h4 className={classes.cardTitle}>Completed Tasks</h4>
-              <p className={classes.cardCategory}>Last Campaign Performance</p>
+              <h4 className={classes.cardTitle}>Symptomatic Index</h4>
+              <p className={classes.cardCategory}>
+                ?% decrease in health index so far
+              </p>
             </CardBody>
             <CardFooter chart>
               <div className={classes.stats}>
